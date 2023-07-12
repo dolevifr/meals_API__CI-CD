@@ -41,6 +41,7 @@ jobs:
           path: /tmp/image.tar
 
       - name: Upload log file artifact
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: log-file
